@@ -1,8 +1,7 @@
 import React from 'react';
-import { Calendar, Heart, MapPin, ArrowDown, Download } from 'lucide-react';
+import { Calendar, Heart, MapPin, ArrowDown } from 'lucide-react';
 import { eventData } from '../config/eventData';
-import { CountdownTimer } from './CountdownTimer';
-import { BotanicalWreath, EucalyptusBranch, DelicateDivider } from './BotanicalDecorations';
+import { EucalyptusBranch, DelicateDivider } from './BotanicalDecorations';
 import { getGoogleCalendarUrl } from '../utils/calendar';
 
 export const Hero = () => {
@@ -59,14 +58,6 @@ export const Hero = () => {
               <span className="font-medium">{eventData.venue.name}</span>
             </div>
           </div>
-        </div>
-
-        {/* Countdown Timer */}
-        <div className="mb-10 w-full">
-          <p className="text-xs uppercase tracking-widest text-[#7C9077] mb-3 font-semibold">
-            Counting Down Until the Big Day
-          </p>
-          <CountdownTimer />
         </div>
 
         {/* Action CTAs */}
