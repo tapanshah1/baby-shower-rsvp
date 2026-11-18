@@ -12,10 +12,11 @@ export default function App() {
   const [isQrOpen, setIsQrOpen] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const localNetworkUrl = "http://192.168.0.38:5173";
+  const liveUrl = typeof window !== 'undefined' ? window.location.origin : "https://baby-shower-rsvp-sooty.vercel.app";
+  const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=260x260&margin=10&data=${encodeURIComponent(liveUrl)}`;
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(localNetworkUrl);
+    navigator.clipboard.writeText(liveUrl);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -76,19 +77,19 @@ export default function App() {
               Open on Your Mobile
             </h3>
             <p className="text-xs text-[#5D6F59] mt-1 mb-4">
-              Connect to the same Wi-Fi and scan with your phone's camera:
+              Scan with your phone's camera to open the invitation:
             </p>
 
             <div className="bg-white p-3.5 rounded-2xl border border-[#CAD4C7] inline-block shadow-sm mb-4">
               <img
-                src="/mobile-qr.png"
+                src={qrCodeUrl}
                 alt="Scan to open on phone"
                 className="w-48 h-48 mx-auto rounded-lg"
               />
             </div>
 
             <div className="bg-white px-3 py-2 rounded-xl border border-[#CAD4C7] flex items-center justify-between text-xs text-[#3E4F3B]">
-              <span className="font-mono text-[11px] truncate">{localNetworkUrl}</span>
+              <span className="font-mono text-[11px] truncate">{liveUrl}</span>
               <button
                 onClick={handleCopy}
                 className="ml-2 p-1 text-[#6B7F62] hover:text-[#4A5D44] cursor-pointer"
