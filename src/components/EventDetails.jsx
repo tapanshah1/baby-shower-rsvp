@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Navigation, Calendar, Clock, Car } from 'lucide-react';
+import { MapPin, Navigation, Calendar, Clock } from 'lucide-react';
 import { eventData } from '../config/eventData';
 import { DelicateDivider } from './BotanicalDecorations';
 import { getGoogleCalendarUrl, downloadIcsFile } from '../utils/calendar';
@@ -39,7 +39,7 @@ export const EventDetails = () => {
           <div className="w-16 h-[1px] bg-[#C5A880]/50 my-6" />
 
           {/* Date & Time Highlight */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-[#3E4F3B] mb-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-[#3E4F3B] mb-8">
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4 text-[#7A8E72]" />
               <span className="font-serif text-xl font-medium">{eventData.dateFormatted}</span>
@@ -50,14 +50,6 @@ export const EventDetails = () => {
               <span className="font-serif text-xl font-medium">{eventData.timeFormatted}</span>
             </div>
           </div>
-
-          {/* Parking Note if exists */}
-          {eventData.venue.parkingNote && (
-            <div className="mb-8 p-3.5 rounded-2xl bg-white/70 border border-[#CAD4C7] flex items-center justify-center gap-2.5 text-xs text-[#52644F] max-w-md w-full">
-              <Car className="w-4 h-4 shrink-0 text-[#71856C]" />
-              <span>{eventData.venue.parkingNote}</span>
-            </div>
-          )}
 
           {/* Action Navigation & Calendar Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-3">

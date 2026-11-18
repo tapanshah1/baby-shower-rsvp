@@ -1,26 +1,28 @@
 export const eventData = {
   // Baby & Parents Details
   headline: "A Sweet Little One is on the Way",
-  subheadline: "Join us to shower love upon",
-  parentsNames: "Harsh & Meera",
+  subheadline: "Join us for the Baby Shower of",
+  parentsNames: "Meera",
+  signatureNames: "Harsh and Meera",
+  gratitudeMessage: "Thank you for surrounding us with your warmth, love, and blessings as we prepare to welcome our little one.",
   babyTitle: "", // No last name per request
   themeSubtitle: "Celebrating New Beginnings with Love & Eucalyptus Sprigs",
 
   // Date & Time
   dateFormatted: "Sunday, January 17, 2026",
-  timeFormatted: "9:30 AM",
+  timeFormatted: "11:00 AM",
   // ISO string for countdown and calendar export
-  eventDateTimeISO: "2026-01-17T09:30:00",
-  eventEndDateTimeISO: "2026-01-17T13:00:00",
+  eventDateTimeISO: "2026-01-17T11:00:00",
+  eventEndDateTimeISO: "2026-01-17T14:30:00",
   rsvpDeadlineFormatted: "January 1, 2026",
 
   // Venue & Location
   venue: {
-    name: "200 Bay St S",
-    addressLine1: "200 Bay Street South",
-    addressLine2: "Hamilton, ON L8P 4S4, Canada",
-    googleMapsUrl: "https://maps.google.com/?q=200+Bay+St+S,+Hamilton,+ON+L8P+4S4,+Canada",
-    parkingNote: "Visitor parking available on-site and along Bay Street South."
+    name: "Galileo Gardens",
+    addressLine1: "1223 ON-8",
+    addressLine2: "Stoney Creek, ON L8E 5G8",
+    googleMapsUrl: "https://maps.google.com/?q=1223+ON-8,+Stoney+Creek,+ON+L8E+5G8,+Canada",
+    parkingNote: ""
   },
 
   // Event Schedule / Timeline (removed per request)

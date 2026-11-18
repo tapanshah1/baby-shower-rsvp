@@ -307,7 +307,7 @@ export const RSVPForm = () => {
               {/* Sweet Note / Message */}
               <div>
                 <label htmlFor="message" className="block text-xs font-semibold uppercase tracking-wider text-[#5A6D56] mb-1.5">
-                  Wishes or Note for the Parents-to-be
+                  Wishes or Note for {eventData.parentsNames}
                 </label>
                 <textarea
                   id="message"

@@ -11,7 +11,7 @@ export const Hero = () => {
   };
 
   return (
-    <header className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-4 pt-16 pb-12 overflow-hidden">
+    <header className="relative flex flex-col items-center justify-center text-center px-4 pt-12 md:pt-16 pb-6 md:pb-8 overflow-hidden">
       {/* Background Decorative Branches */}
       <div className="absolute -top-12 -left-12 opacity-40 pointer-events-none md:opacity-60">
         <EucalyptusBranch className="w-56 h-56 md:w-80 md:h-80" />
