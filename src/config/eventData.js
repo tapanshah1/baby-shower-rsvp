@@ -14,7 +14,7 @@ export const eventData = {
   // ISO string for countdown and calendar export
   eventDateTimeISO: "2026-01-17T11:00:00",
   eventEndDateTimeISO: "2026-01-17T14:30:00",
-  rsvpDeadlineFormatted: "January 1, 2026",
+  rsvpDeadlineFormatted: "December 15, 2025",
 
   // Venue & Location
   venue: {
