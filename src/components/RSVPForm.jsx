@@ -215,7 +215,7 @@ export const RSVPForm = () => {
               </div>
 
               {/* Guest Information */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className={formData.attending === 'yes' ? "grid grid-cols-1 sm:grid-cols-2 gap-4" : ""}>
                 <div>
                   <label htmlFor="fullName" className="block text-xs font-semibold uppercase tracking-wider text-[#5A6D56] mb-1.5">
                     Your Full Name *
@@ -227,39 +227,6 @@ export const RSVPForm = () => {
                     required
                     placeholder="e.g. Eleanor Vance"
                     value={formData.fullName}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2.5 rounded-xl bg-white border border-[#CAD4C7] focus:border-[#6B7F62] focus:ring-2 focus:ring-[#8F9E8B]/30 outline-none text-sm transition"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-xs font-semibold uppercase tracking-wider text-[#5A6D56] mb-1.5">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    placeholder="eleanor@example.com"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2.5 rounded-xl bg-white border border-[#CAD4C7] focus:border-[#6B7F62] focus:ring-2 focus:ring-[#8F9E8B]/30 outline-none text-sm transition"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="phone" className="block text-xs font-semibold uppercase tracking-wider text-[#5A6D56] mb-1.5">
-                    Phone Number (Optional)
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="(555) 000-0000"
-                    value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-2.5 rounded-xl bg-white border border-[#CAD4C7] focus:border-[#6B7F62] focus:ring-2 focus:ring-[#8F9E8B]/30 outline-none text-sm transition"
                   />
