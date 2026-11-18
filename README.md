@@ -11,7 +11,7 @@ An interactive Baby Shower Invitation and RSVP web application designed with a *
   - One-click **Save Card Photo (PNG)** to save a high-resolution invitation image formatted for mobile devices and WhatsApp.
   - Guided **Share on WhatsApp** flow.
   - One-click **Copy Text & Link** pre-formatted with event details and the RSVP link.
-- **⏰ Live Countdown Timer:** Real-time countdown clock to the celebration date and time (**Sunday, January 17, 2026 at 11:00 AM**).
+- **⏰ Live Countdown Timer:** Real-time countdown clock to the celebration date and time (**Sunday, January 17, 2027 at 11:00 AM**).
 - **📍 Date & Location Card:**
   - Galileo Gardens, 1223 ON-8, Stoney Creek, ON L8E 5G8, Canada
   - Direct **Open in Google Maps** navigation

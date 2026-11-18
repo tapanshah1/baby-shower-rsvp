@@ -9,12 +9,12 @@ export const eventData = {
   themeSubtitle: "Celebrating New Beginnings with Love & Eucalyptus Sprigs",
 
   // Date & Time
-  dateFormatted: "Sunday, January 17, 2026",
+  dateFormatted: "Sunday, January 17, 2027",
   timeFormatted: "11:00 AM",
   // ISO string for countdown and calendar export
-  eventDateTimeISO: "2026-01-17T11:00:00",
-  eventEndDateTimeISO: "2026-01-17T14:30:00",
-  rsvpDeadlineFormatted: "December 15, 2025",
+  eventDateTimeISO: "2027-01-17T11:00:00",
+  eventEndDateTimeISO: "2027-01-17T14:30:00",
+  rsvpDeadlineFormatted: "December 15, 2026",
 
   // Venue & Location
   venue: {
