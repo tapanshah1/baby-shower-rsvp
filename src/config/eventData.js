@@ -40,5 +40,5 @@ export const eventData = {
   },
 
   // Google Sheets / Airtable Webhook Settings
-  googleSheetScriptUrl: ""
+  googleSheetScriptUrl: "https://script.google.com/macros/s/AKfycbyjOgc6rK7jp3gnxgWewPiya8c5ocl4l5lvrXykOPvYn1tsIDjcZ2zYT_N86Ok1E565/exec"
 };
