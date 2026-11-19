@@ -2,7 +2,6 @@ import React from 'react';
 import { MapPin, Navigation, Calendar, Clock } from 'lucide-react';
 import { eventData } from '../config/eventData';
 import { DelicateDivider } from './BotanicalDecorations';
-import { getGoogleCalendarUrl, downloadIcsFile } from '../utils/calendar';
 
 export const EventDetails = () => {
   return (
@@ -51,8 +50,8 @@ export const EventDetails = () => {
             </div>
           </div>
 
-          {/* Action Navigation & Calendar Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-3">
+          {/* Action Navigation Button */}
+          <div className="flex items-center justify-center">
             <a
               href={eventData.venue.googleMapsUrl}
               target="_blank"
@@ -62,27 +61,10 @@ export const EventDetails = () => {
               <Navigation className="w-4 h-4" />
               <span>Open in Google Maps</span>
             </a>
-
-            <a
-              href={getGoogleCalendarUrl()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white hover:bg-[#F3F5EE] border border-[#CAD4C7] text-xs font-semibold tracking-wider uppercase text-[#3D4F39] transition shadow-xs hover:shadow"
-            >
-              <Calendar className="w-4 h-4 text-[#71856C]" />
-              <span>Google Calendar</span>
-            </a>
-
-            <button
-              onClick={downloadIcsFile}
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white hover:bg-[#F3F5EE] border border-[#CAD4C7] text-xs font-semibold tracking-wider uppercase text-[#3D4F39] transition shadow-xs hover:shadow cursor-pointer"
-            >
-              <Calendar className="w-4 h-4 text-[#71856C]" />
-              <span>Apple Calendar (.ics)</span>
-            </button>
           </div>
         </div>
       </div>
     </section>
   );
 };
+

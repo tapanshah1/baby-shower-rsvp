@@ -2,6 +2,7 @@ import React from 'react';
 import { Calendar, Heart, MapPin, ArrowDown } from 'lucide-react';
 import { eventData } from '../config/eventData';
 import { EucalyptusBranch, DelicateDivider } from './BotanicalDecorations';
+import { getGoogleCalendarUrl, downloadIcsFile } from '../utils/calendar';
 
 export const Hero = () => {
   const scrollToRSVP = () => {
@@ -60,13 +61,31 @@ export const Hero = () => {
         </div>
 
         {/* Action CTAs */}
-        <div className="flex items-center justify-center">
+        <div className="flex flex-wrap items-center justify-center gap-3">
           <button
             onClick={scrollToRSVP}
-            className="px-7 py-3 rounded-full bg-[#6B7F62] hover:bg-[#586A50] text-white font-serif text-lg tracking-wide transition shadow-md hover:shadow-lg flex items-center gap-2 cursor-pointer"
+            className="px-7 py-3 rounded-full bg-[#6B7F62] hover:bg-[#586A50] text-white font-serif text-base md:text-lg tracking-wide transition shadow-md hover:shadow-lg flex items-center gap-2 cursor-pointer"
           >
             <span>RSVP Today</span>
             <ArrowDown className="w-4 h-4" />
+          </button>
+
+          <a
+            href={getGoogleCalendarUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white hover:bg-[#F3F5EE] border border-[#CAD4C7] text-xs font-semibold tracking-wider uppercase text-[#3D4F39] transition shadow-xs hover:shadow"
+          >
+            <Calendar className="w-4 h-4 text-[#71856C]" />
+            <span>Google Calendar</span>
+          </a>
+
+          <button
+            onClick={downloadIcsFile}
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white hover:bg-[#F3F5EE] border border-[#CAD4C7] text-xs font-semibold tracking-wider uppercase text-[#3D4F39] transition shadow-xs hover:shadow cursor-pointer"
+          >
+            <Calendar className="w-4 h-4 text-[#71856C]" />
+            <span>Apple Calendar (.ics)</span>
           </button>
         </div>
       </div>
