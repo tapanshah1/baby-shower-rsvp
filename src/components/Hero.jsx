@@ -2,7 +2,6 @@ import React from 'react';
 import { Calendar, Heart, MapPin, ArrowDown } from 'lucide-react';
 import { eventData } from '../config/eventData';
 import { EucalyptusBranch, DelicateDivider } from './BotanicalDecorations';
-import { getGoogleCalendarUrl } from '../utils/calendar';
 
 export const Hero = () => {
   const scrollToRSVP = () => {
@@ -61,7 +60,7 @@ export const Hero = () => {
         </div>
 
         {/* Action CTAs */}
-        <div className="flex flex-wrap items-center justify-center gap-3.5">
+        <div className="flex items-center justify-center">
           <button
             onClick={scrollToRSVP}
             className="px-7 py-3 rounded-full bg-[#6B7F62] hover:bg-[#586A50] text-white font-serif text-lg tracking-wide transition shadow-md hover:shadow-lg flex items-center gap-2 cursor-pointer"
@@ -69,16 +68,6 @@ export const Hero = () => {
             <span>RSVP Today</span>
             <ArrowDown className="w-4 h-4" />
           </button>
-
-          <a
-            href={getGoogleCalendarUrl()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 rounded-full bg-white hover:bg-[#F3F5EE] border border-[#A3B89B]/50 text-[#3D4F39] text-sm font-medium transition shadow-sm hover:shadow flex items-center gap-2"
-          >
-            <Calendar className="w-4 h-4 text-[#71856C]" />
-            <span>Add to Calendar</span>
-          </a>
         </div>
       </div>
     </header>
