@@ -42,14 +42,14 @@ export const InvitationCard = () => {
             </h3>
 
             <p className="font-script text-2xl md:text-3xl text-[#9E7B4F] mt-1">
-              {eventData.parentsNames.includes('&') ? 'honoring the parents-to-be' : 'honoring the mom-to-be'}
+              {eventData.cardHonoringText || 'honoring the parents-to-be'}
             </p>
 
             <DelicateDivider className="my-3" />
 
             <div className="my-2">
               <span className="font-serif text-3xl md:text-4xl font-semibold text-[#2F3F2C] tracking-wide block">
-                {eventData.parentsNames}
+                {eventData.cardParentsNames || 'Harsh & Meera'}
               </span>
               {eventData.babyTitle && (
                 <span className="text-xs uppercase tracking-widest text-[#7B8F77] mt-1 block">

@@ -3,6 +3,8 @@ export const eventData = {
   headline: "A Sweet Little One is on the Way",
   subheadline: "Join us for the Baby Shower of",
   parentsNames: "Meera",
+  cardHonoringText: "honoring the parents-to-be",
+  cardParentsNames: "Harsh & Meera",
   signatureNames: "Harsh and Meera",
   gratitudeMessage: "Thank you for surrounding us with your warmth, love, and blessings as we prepare to welcome our little one.",
   babyTitle: "", // No last name per request

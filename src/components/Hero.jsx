@@ -42,19 +42,19 @@ export const Hero = () => {
         <DelicateDivider className="my-6" />
 
         {/* Date, Time & Venue Summary Card */}
-        <div className="glass-panel px-6 py-4 rounded-2xl max-w-xl mx-auto mb-8 botanical-shadow">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm text-[#3E4F3B]">
-            <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4 text-[#7A8E72]" />
+        <div className="glass-panel px-5 sm:px-7 py-3.5 sm:py-4 rounded-2xl max-w-2xl mx-auto mb-8 botanical-shadow">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-sm text-[#3E4F3B]">
+            <div className="flex items-center gap-2 whitespace-nowrap">
+              <Calendar className="w-4 h-4 text-[#7A8E72] shrink-0" />
               <span className="font-medium">{eventData.dateFormatted}</span>
             </div>
-            <div className="hidden sm:block w-1.5 h-1.5 rounded-full bg-[#C5A880]" />
-            <div className="flex items-center gap-2">
+            <div className="hidden sm:block w-1.5 h-1.5 rounded-full bg-[#C5A880] shrink-0" />
+            <div className="flex items-center gap-2 whitespace-nowrap">
               <span className="font-medium">{eventData.timeFormatted}</span>
             </div>
-            <div className="hidden sm:block w-1.5 h-1.5 rounded-full bg-[#C5A880]" />
-            <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-[#7A8E72]" />
+            <div className="hidden sm:block w-1.5 h-1.5 rounded-full bg-[#C5A880] shrink-0" />
+            <div className="flex items-center gap-2 whitespace-nowrap">
+              <MapPin className="w-4 h-4 text-[#7A8E72] shrink-0" />
               <span className="font-medium">{eventData.venue.name}</span>
             </div>
           </div>
