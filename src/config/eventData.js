@@ -5,7 +5,7 @@ export const eventData = {
   parentsNames: "Meera",
   cardHonoringText: "honoring the parents-to-be",
   cardParentsNames: "Meera & Harsh",
-  signatureNames: "Harsh and Meera",
+  signatureNames: "Meera & Harsh",
   gratitudeMessage: "Thank you for surrounding us with your warmth, love, and blessings as we prepare to welcome our little one.",
   babyTitle: "", // No last name per request
   themeSubtitle: "Celebrating New Beginnings with Love & Eucalyptus Sprigs",
