@@ -49,7 +49,7 @@ export const InvitationCard = () => {
 
             <div className="my-2">
               <span className="font-serif text-3xl md:text-4xl font-semibold text-[#2F3F2C] tracking-wide block">
-                {eventData.cardParentsNames || 'Harsh & Meera'}
+                {eventData.cardParentsNames || 'Meera & Harsh'}
               </span>
               {eventData.babyTitle && (
                 <span className="text-xs uppercase tracking-widest text-[#7B8F77] mt-1 block">
